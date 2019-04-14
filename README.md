@@ -1,2 +1,2 @@
 # lucasromagnoli
-Repositório onde Armazeno minhas configurações.
+Repositório onde armazeno minhas configurações.

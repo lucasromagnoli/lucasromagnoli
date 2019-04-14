@@ -1,0 +1,25 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "editor.renderControlCharacters": false,
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "window.zoomLevel": 0,
+    "explorer.confirmDragAndDrop": false,
+    "workbench.colorTheme": "Dracula",
+
+    //Configura o tamanho e família da fonte.
+    "editor.fontSize": 16, // Tamanho da fonte.
+    "editor.lineHeight": 24, // Espaçamento entre uma fonte e outra.
+    "editor.fontFamily": "Fira Code", // Família da fonte.
+    "editor.fontLigatures": true, //
+
+    "editor.renderLineHighlight": "none",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "explorer.confirmDelete": false
+}
