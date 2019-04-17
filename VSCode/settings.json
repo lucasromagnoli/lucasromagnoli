@@ -1,25 +1,29 @@
 {
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.minimap.enabled": false,
-    "breadcrumbs.enabled": false,
-    "editor.renderControlCharacters": false,
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "window.zoomLevel": 0,
-    "explorer.confirmDragAndDrop": false,
-    "workbench.colorTheme": "Dracula",
+  "window.zoomLevel": 0, // Define o zoom padrão
+  "workbench.iconTheme": "vscode-icons", // Configura o tema dos ícones do vscode.
+  "workbench.colorTheme": "Dracula", // Configura o tema do vscode
+  "breadcrumbs.enabled": true, // Mostra o caminho até o arquivo
 
-    //Configura o tamanho e família da fonte.
-    "editor.fontSize": 16, // Tamanho da fonte.
-    "editor.lineHeight": 24, // Espaçamento entre uma fonte e outra.
-    "editor.fontFamily": "Fira Code", // Família da fonte.
-    "editor.fontLigatures": true, //
+  "editor.fontSize": 16, // Tamanho da fonte.
+  "editor.lineHeight": 24, // Espaçamento entre uma fonte e outra.
+  "editor.fontFamily": "Fira Code", // Família da fonte.
+  "editor.fontLigatures": true, //
+  "editor.minimap.enabled": false, // Remove o minimapa
+  "editor.renderLineHighlight": "none", // Não mostra nenhum marcador da linha
+  "editor.formatOnSave": true, // Formata o arquivo quando salvamos o mesmo.
+  "editor.rulers": [120], // Cria uma linha indicando que o código não deveria ultrapassar.
 
-    "editor.renderLineHighlight": "none",
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "explorer.confirmDelete": false
+  "terminal.integrated.fontSize": 14, // Define o tamanho da fonte do terminal.
+  "prettier.tslintIntegration": true, // Integração entre os plugins ESLint e Prettier.
+  "emmet.syntaxProfiles": {
+    // Define que vamos utilizar o intellsense JSX.
+    "javascript": "jsx"
+  },
+
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact" // Quando utilizarmos o intellsense em arquivos js transformar class em ClassName
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Define o formatador padrão sendo o plugin Prettier
+  }
 }

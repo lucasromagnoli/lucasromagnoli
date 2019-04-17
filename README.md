@@ -1,9 +1,18 @@
 # lucasromagnoli
+
 Repositório onde guardo minhas configurações.
 
-*** Extensões ***
-* Dracula Official
-* JavaScript (ES6) code snippets
-* Material Icon Theme
-* Portugues (Brazil) Language Pack for Visual Studio Code
-* Prettier - Code formatter
+#Extensões - VSC
+
+- Dracula Official
+- JavaScript (ES6) code snippets
+- VScode-icons
+- Portugues (Brazil) Language Pack for Visual Studio Code
+- Prettier - Code formatter
+- Color Highlight
+- ESlint
+
+#Ferramentas
+
+- Insomnia REST Cliente
+- DevDocs Desktop
