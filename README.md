@@ -2,7 +2,7 @@
 
 Repositório onde guardo minhas configurações.
 
-#Extensões - VSC
+# Extensões - VSC
 
 - Dracula Official
 - JavaScript (ES6) code snippets
@@ -12,7 +12,7 @@ Repositório onde guardo minhas configurações.
 - Color Highlight
 - ESlint
 
-#Ferramentas
+# Ferramentas
 
 - Insomnia REST Cliente
 - DevDocs Desktop
