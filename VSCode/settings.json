@@ -1,6 +1,5 @@
 {
   "window.zoomLevel": 0, // Define o zoom padrão
-  "workbench.iconTheme": "vscode-icons", // Configura o tema dos ícones do vscode.
   "workbench.colorTheme": "Dracula", // Configura o tema do vscode
   "breadcrumbs.enabled": true, // Mostra o caminho até o arquivo
 
@@ -14,14 +13,15 @@
   "editor.rulers": [120], // Cria uma linha indicando que o código não deveria ultrapassar.
 
   "terminal.integrated.fontSize": 14, // Define o tamanho da fonte do terminal.
-  "prettier.tslintIntegration": true, // Integração entre os plugins ESLint e Prettier.
+  "prettier.eslintIntegration": true, // Integração entre os plugins ESLint e Prettier.
   "emmet.syntaxProfiles": {
     // Define que vamos utilizar o intellsense JSX.
     "javascript": "jsx"
   },
 
   "emmet.includeLanguages": {
-    "javascript": "javascriptreact" // Quando utilizarmos o intellsense em arquivos js transformar class em ClassName
+    "javascript": "javascriptreact", // Quando utilizarmos o intellsense em arquivos js transformar class em ClassName
+    "nunjucks": "html" // Define que vamos utilizar o nunjucks
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode" // Define o formatador padrão sendo o plugin Prettier
