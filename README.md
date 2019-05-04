@@ -11,6 +11,8 @@ Repositório onde guardo minhas configurações.
 - Prettier - Code formatter
 - Color Highlight
 - ESlint
+- Nunjucks
+- EditorConfig for VSCode
 
 # Ferramentas
 
