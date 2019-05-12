@@ -2,6 +2,9 @@
 
 Repositório onde guardo minhas configurações.
 
+Nome: Lucas Ramos Romagnoli
+Idade: 23
+
 # Extensões - VSC
 
 - Dracula Official
