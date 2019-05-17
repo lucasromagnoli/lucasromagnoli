@@ -4,6 +4,7 @@ Repositório onde guardo minhas configurações.
 
 Nome: Lucas Ramos Romagnoli
 Idade: 23
+Cidade: Goiânia - GO
 
 # Extensões - VSC
 
