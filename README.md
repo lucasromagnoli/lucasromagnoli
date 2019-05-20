@@ -22,3 +22,6 @@ Cidade: Goiânia - GO
 
 - Insomnia REST Cliente
 - DevDocs Desktop
+
+# Sites importantes
+https://mailtrap.io/
