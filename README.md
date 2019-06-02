@@ -25,3 +25,4 @@ Cidade: Goiânia - GO
 
 # Sites importantes
 https://mailtrap.io/
+https://sentry.io/
