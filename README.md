@@ -2,9 +2,8 @@
 
 Repositório onde guardo minhas configurações.
 
-Nome: Lucas Ramos Romagnoli
-Idade: 23
-Cidade: Goiânia - GO
+# Terminal
+- Zsh com Oh My Zsh
 
 # Extensões - VSC
 
@@ -15,7 +14,6 @@ Cidade: Goiânia - GO
 - Prettier - Code formatter
 - Color Highlight
 - ESlint
-- Nunjucks
 - EditorConfig for VSCode
 
 # Ferramentas
