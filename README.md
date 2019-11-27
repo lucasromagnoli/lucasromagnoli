@@ -15,6 +15,7 @@ Repositório onde guardo minhas configurações.
 - Color Highlight
 - ESlint
 - EditorConfig for VSCode
+- GitLens — Git supercharged
 
 # Ferramentas
 
