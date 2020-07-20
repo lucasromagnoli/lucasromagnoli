@@ -9,7 +9,8 @@ public class GitHub {
     public void readme() {
         Person person = new Person();
         person.setName("Lucas Ramos Romagnoli");
-        person.setDescription("I am a professional who love to code. Always looking for the best programming solutions and practices.");
+        person.setDescription("I am a professional who love to code. " +
+                              "Always looking for the best programming solutions and practices.");
         person.setCity(new City("Goiânia", "Goiás", "Brazil"));
         person.setEmail("lucasr.romagnoli@gmail.com");
         person.getSocialMedias().put(SocialMedia.LINKEDIN, "in/lucasromagnoli");
