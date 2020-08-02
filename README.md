@@ -14,7 +14,7 @@ public class GitHub {
                             .email("lucasr.romagnoli@gmail.com")
                             .addSocialMedia(SocialMedia.LINKEDIN, "in/lucasromagnoli")
                             .addKnowledge(Knowledges.LANGUAGE, Language.JAVA)
-                            .addKnowledge((Knowledges.LANGUAGE, Language.JAVASCRIPT)
+                            .addKnowledge(Knowledges.LANGUAGE, Language.JAVASCRIPT)
                             .addKnowledge(Knowledges.LANGUAGE, Language.CPP)
                             .addKnowledge(Knowledges.LANGUAGE, Language.LUA)
                             .addKnowledge(Knowledges.LANGUAGE, Language.CSHARP)
