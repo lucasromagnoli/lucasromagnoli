@@ -13,6 +13,7 @@ public class GitHub {
                                          "Always looking for the best programming solutions and practices.")
                             .email("lucasr.romagnoli@gmail.com")
                             .addSocialMedia(SocialMedia.LINKEDIN, "in/lucasromagnoli")
+                            .addCertificate(Company.ORACLE, Java.OCAJP)
                             .addKnowledge(Knowledges.LANGUAGE, Language.JAVA)
                             .addKnowledge(Knowledges.LANGUAGE, Language.JAVASCRIPT)
                             .addKnowledge(Knowledges.LANGUAGE, Language.CPP)
