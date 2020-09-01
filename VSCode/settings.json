@@ -12,7 +12,7 @@
   "editor.formatOnSave": true, // Formata o arquivo quando salvamos o mesmo.
   "editor.rulers": [120], // Cria uma linha indicando que o código não deveria ultrapassar.
 
-  "terminal.integrated.shell.osx": "/bin/zsh" // Define o zsh como terminal default
+  "terminal.integrated.shell.osx": "/bin/zsh", // Define o zsh como terminal default
   "terminal.integrated.fontSize": 14, // Define o tamanho da fonte do terminal.
   "prettier.eslintIntegration": true, // Integração entre os plugins ESLint e Prettier.
   "emmet.syntaxProfiles": {
