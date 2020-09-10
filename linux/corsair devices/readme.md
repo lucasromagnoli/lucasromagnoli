@@ -1,2 +1,2 @@
-#Corsair Devices on Linux
+# Corsair Devices on Linux
 ```https://github.com/ckb-next/ckb-next```
