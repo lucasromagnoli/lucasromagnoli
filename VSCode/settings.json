@@ -1,30 +1,15 @@
 {
-  "window.zoomLevel": 0, // Define o zoom padrão
-  "workbench.colorTheme": "Dracula", // Configura o tema do vscode
-  "breadcrumbs.enabled": true, // Mostra o caminho até o arquivo
-
-  "editor.fontSize": 16, // Tamanho da fonte.
-  "editor.lineHeight": 24, // Espaçamento entre uma fonte e outra.
-  "editor.fontFamily": "Fira Code", // Família da fonte.
-  "editor.fontLigatures": true, //
-  "editor.minimap.enabled": false, // Remove o minimapa
-  "editor.renderLineHighlight": "none", // Não mostra nenhum marcador da linha
-  "editor.formatOnSave": true, // Formata o arquivo quando salvamos o mesmo.
-  "editor.rulers": [120], // Cria uma linha indicando que o código não deveria ultrapassar.
-
-  "terminal.integrated.shell.osx": "/bin/zsh", // Define o zsh como terminal default
-  "terminal.integrated.fontSize": 14, // Define o tamanho da fonte do terminal.
-  "prettier.eslintIntegration": true, // Integração entre os plugins ESLint e Prettier.
-  "emmet.syntaxProfiles": {
-    // Define que vamos utilizar o intellsense JSX.
-    "javascript": "jsx"
-  },
-
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact", // Quando utilizarmos o intellsense em arquivos js transformar class em ClassName
-    "nunjucks": "html" // Define que vamos utilizar o nunjucks
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode" // Define o formatador padrão sendo o plugin Prettier
+    "window.zoomLevel": 0, // Define o zoom padrão
+    "workbench.colorTheme": "Dracula", // Configura o tema do vscode
+    "breadcrumbs.enabled": true, // Mostra o caminho até o arquivo
+    "editor.fontSize": 16, // Tamanho da fonte.
+    "editor.lineHeight": 24, // Espaçamento entre uma fonte e outra.
+    "editor.fontFamily": "Fira Code", // Família da fonte.
+    "editor.fontLigatures": true, //
+    "editor.minimap.enabled": false, // Remove o minimapa
+    "editor.renderLineHighlight": "none", // Não mostra nenhum marcador da linha
+    "editor.formatOnSave": false, // Formata o arquivo quando salvamos o mesmo.
+    "editor.rulers": [120], // Cria uma linha indicando que o código não deveria ultrapassar.
+    "terminal.integrated.shell.osx": "/bin/zsh", // Define o zsh como terminal default
+    "terminal.integrated.fontSize": 14, // Define o tamanho da fonte do terminal.
   }
-}
