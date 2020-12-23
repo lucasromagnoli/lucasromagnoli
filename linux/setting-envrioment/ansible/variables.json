@@ -1,0 +1,8 @@
+{
+    "ansible_local_user": "lucasromagnoli",
+    "ansible_local_home": "/home/lucasromagnoli",
+    "export_variables_path": "/etc/profile.d/",
+    "java_jdks_folder": "/usr/java",
+    "url_amazon_correto_jdk11": "https://corretto.aws/downloads/latest/amazon-corretto-11-x64-linux-jdk.tar.gz",
+    "url_amazon_correto_jdk8": "https://corretto.aws/downloads/latest/amazon-corretto-8-x64-linux-jdk.tar.gz"
+}

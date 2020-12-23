@@ -1,0 +1,58 @@
+---
+- name: Create home/lucasromagnoli/tmp/ directory
+  file:
+    path: "{{ansible_local_home}}/tmp"
+    state: directory
+    owner: "{{ansible_local_user}}"
+- name: Download amazon-correto-jdk8 and amazon-correto-jdk11
+  get_url:
+    url: "{{item.url}}"
+    dest: "{{ansible_local_home}}/tmp/{{item.filename}}.tar.gz"
+    validate_certs: no
+  loop:
+    - { url: "{{url_amazon_correto_jdk8}}", filename: "amazon-correto-jdk8"}
+    - { url: "{{url_amazon_correto_jdk11}}", filename: "amazon-correto-jdk11"}
+- name: Create amazon-correto-jdk8 and amazon-correto-jdk11 directory
+  file:
+    path: "{{ansible_local_home}}/tmp/{{item.dirname}}"
+    state: directory
+    owner: "{{ansible_local_user}}"
+  loop:
+    - { dirname: "amazon-correto-jdk8" }
+    - { dirname: "amazon-correto-jdk11" }
+- name: Extract amazon-correto-jdk8.tar.gz and amazon-correto-jdk11.tar.gz
+  unarchive:
+    src: "{{ansible_local_home}}/tmp/{{item.filename}}.tar.gz"
+    dest: "{{ansible_local_home}}/tmp/{{item.filename}}"
+    extra_opts: [--strip-components=1] # Ao extrair vai ignorar a primeira pasta
+  loop:
+    - { filename: "amazon-correto-jdk8"}
+    - { filename: "amazon-correto-jdk11"}
+- name: Remove amazon-correto-jdk8.tar.gz and amazon-correto-jdk11.tar.gz
+  file:
+    state: absent
+    path: "{{ansible_local_home}}/tmp/{{item.filename}}.tar.gz"
+  loop:
+    - { filename: "amazon-correto-jdk8"}
+    - { filename: "amazon-correto-jdk11"}
+- name: Create /usr/java/ directory
+  file:
+    path: "{{java_jdks_folder}}"
+    state: directory
+- name: Moving amazon-correto-jdk8 and amazon-correto-jdk11 from tmp folder to jdks directory
+  command: mv "{{ansible_local_home}}/tmp/{{item.filename}}" "{{java_jdks_folder}}"
+  loop:
+    - { filename: "amazon-correto-jdk8"}
+    - { filename: "amazon-correto-jdk11"}
+- name: Remove home/lucasromagnoli/tmp/ directory
+  file:
+    state: absent
+    path: "{{ansible_local_home}}/tmp/"
+- name: Create /etc/profile.id/ directory
+  file:
+    path: "{{export_variables_path}}"
+    state: directory
+- name: Copy java.sh template file to /etc/profile.id/
+  template:
+    src: java.sh
+    dest: "{{export_variables_path}}/java.sh"
