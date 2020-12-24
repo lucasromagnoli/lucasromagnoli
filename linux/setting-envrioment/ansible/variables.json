@@ -3,6 +3,9 @@
     "ansible_local_home": "/home/lucasromagnoli",
     "export_variables_path": "/etc/profile.d/",
     "java_jdks_folder": "/usr/java",
+    "opt_folder": "/opt",
+    "apache_maven_folder": "apache-maven-3.6.3",
+    "url_apache_maven": "https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz",
     "url_amazon_correto_jdk11": "https://corretto.aws/downloads/latest/amazon-corretto-11-x64-linux-jdk.tar.gz",
     "url_amazon_correto_jdk8": "https://corretto.aws/downloads/latest/amazon-corretto-8-x64-linux-jdk.tar.gz"
 }

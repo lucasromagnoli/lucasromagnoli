@@ -1,0 +1,43 @@
+---
+- name: Create home/lucasromagnoli/tmp/ directory
+  file:
+    path: "{{ansible_local_home}}/tmp"
+    state: directory
+    owner: "{{ansible_local_user}}"
+- name: Download apache-maven
+  get_url:
+    url: "{{url_apache_maven}}"
+    dest: "{{ansible_local_home}}/tmp/{{apache_maven_folder}}.tar.gz"
+    validate_certs: no
+- name: Create tmp/apache-maven-3.6.3 directory
+  file:
+    path: "{{ansible_local_home}}/tmp/{{apache_maven_folder}}"
+    state: directory
+    owner: "{{ansible_local_user}}"
+- name: Extract apache-maven-3.6.3.tar.gz
+  unarchive:
+    src: "{{ansible_local_home}}/tmp/{{apache_maven_folder}}.tar.gz"
+    dest: "{{ansible_local_home}}/tmp/{{apache_maven_folder}}"
+    extra_opts: [--strip-components=1] # Ao extrair vai ignorar a primeira pasta
+- name: Remove apache-maven-3.6.3.tar.gz
+  file:
+    state: absent
+    path: "{{ansible_local_home}}/tmp/{{apache_maven_folder}}.tar.gz"
+- name: Create /opt/apache-maven/ directory
+  file:
+    path: "{{opt_folder}}"
+    state: directory
+- name: Moving apache-maven-3.6.3 from tmp folder to maven directory
+  command: mv "{{ansible_local_home}}/tmp/{{apache_maven_folder}}" "{{opt_folder}}"
+- name: Remove home/lucasromagnoli/tmp/ directory
+  file:
+    state: absent
+    path: "{{ansible_local_home}}/tmp/"
+- name: Create /etc/profile.id/ directory
+  file:
+    path: "{{export_variables_path}}"
+    state: directory
+- name: Copy maven.sh template file to /etc/profile.id/
+  template:
+    src: maven.sh
+    dest: "{{export_variables_path}}/maven.sh"
