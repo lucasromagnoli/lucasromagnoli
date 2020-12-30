@@ -1,0 +1,8 @@
+---
+- name: Install all easy applications with apt-get
+  apt:
+    name: "{{item.package}}"
+    state: latest
+  loop:
+    - { package: "htop"}
+    - { package: "vlc"}
