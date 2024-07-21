@@ -14,6 +14,7 @@ public class GitHub {
                 .email("lucasr.romagnoli@gmail.com")
                 .socialMedia(SocialMedia.LINKEDIN, "in/lucasromagnoli")
                 .certificate(Company.AWS, AWS.DEVELOPER)
+                .certificate(Company.AWS, AWS.ARCHITECT)
                 .certificate(Company.ORACLE, Java.OCAJP)
                 .build();
     }
